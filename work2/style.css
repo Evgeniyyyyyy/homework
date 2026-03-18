@@ -1,0 +1,55 @@
+body {
+    flex: auto;
+    margin:auto;
+    width: 1050px;
+    padding: 10px 100px;
+}
+
+main {
+    padding: 52px 0px;
+}
+
+.name {
+    margin-right:70%;
+    display:inline-block;
+    
+}
+
+.number {
+    width: 200px;
+    height: 100px;
+    margin:0px;
+    display:inline-block;
+}
+.number h4 {
+    opacity: 0.3;
+}
+a {
+    text-decoration: none;
+    
+}
+
+a:hover { 
+    text-decoration: underline;
+}
+
+li::marker {
+    color: rgb(78, 124, 250);
+}
+
+footer {
+    text-align: center;
+    margin-top: 25%;
+}
+.info {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    gap: 30px;              
+}
+.info p {
+    width: 100px;
+    height: 100px;
+    white-space: nowrap;
+    font-size: 13px;
+}
