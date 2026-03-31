@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form class="form">
+        <fieldset class="form_group">
+            <legend class="form_group_title">Ваши личные данные</legend>
+            <label for="name" class="label">Ваше имя</label>
+                <input 
+                    id="name" 
+                    class="input" 
+                    type="text" 
+                    placeholder="Евгений" 
+                    name="name" 
+                    required
+                />
+            <label for="age" class="label">Ваш возраст</label>
+                <input 
+                    id="age" 
+                    class="input" 
+                    type="number"
+                    placeholder="22" 
+                    name="age" 
+                    required
+                />
+            <label for="phone" class="label">Ваш номер телефона</label>
+                <input 
+                    id="phone" 
+                    class="input" 
+                    type="tel"
+                    inputmode="tel"
+                    placeholder="+7-800-555-3535" 
+                    name="phone" 
+                    required
+                />
+            <label for="email" class="label">Ваша почта</label>
+                <input 
+                    id="email" 
+                    class="input" 
+                    type="email"
+                    inputmode="email"
+                    placeholder="lox@gmail.com" 
+                    name="email" 
+                    required
+                />
+            <label for="massage" class="label">Сообщение</label>
+                <textarea
+                    id="massage" 
+                    class="textarea" 
+                    type="text"
+                    placeholder="Попыт круче" 
+                    name="massage" 
+                    required
+                ></textarea> 
+            <label class="label checkbox_label">
+                <input
+                    id="checkbox" 
+                    class="checkbox" 
+                    type="checkbox"
+                    name="checkbox" 
+                    required
+                />
+                <span class="checkbox_text">Я принимаю правила</span> 
+            </label>
+            <div class="button_form_1">
+                <button class="button_1 button_form">Отправить</button>
+                <button class="button_2 button_form" type="reset" >Очистить</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

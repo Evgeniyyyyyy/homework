@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+
+.form {
+    border: 2px solid black;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+}
+
+.form_group {
+    border: none;
+    padding: 0;
+}
+
+.form_group_title {
+    font-weight: 800;
+    padding: 0;
+    margin: 5px 5px 15px;
+}
+
+.label {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.input, .textarea{
+    width: 100%;
+    border: 1px solid #d88bf4;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+}
+
+.textarea {
+    max-width: 353px;
+    min-width: 353px;
+    min-height: 45px;
+    max-height: 150px;
+    margin-bottom: 8px;
+}
+
+.checkbox {
+    position: absolute;
+    appearance: none;
+    outline: none;
+    margin: 0;
+}
+
+.checkbox_label {
+    padding-left: 20px;
+}
+
+
+.checkbox::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    margin-left: -20px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.checkbox:checked::after {
+    background: url("../images/check-icon.svg") no-repeat center, #9108f2 ;
+}
+
+.checkbox_text {
+    font-size: 14px;
+}
+
+.button_form_1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button_form {
+    background-color: #6f00be;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: opacity 0.3s;
+}
+
+.button_form:hover {
+    opacity: 0.85;
+}
+
+.button_form:not(:disabled):active {
+    background-color: #49007e;
+}
+
+.button_form:disabled,
+.input:disabled,
+.checkbox:disabled::after,
+.textarea:disabled {
+    opacity: 0.7;
+    cursor: default;
+}
+
+.input:focus-visible,
+.textarea:focus-visible,
+.checkbox:focus-visible::after,
+.button_form:focus-visible {
+    outline: 2px solid #9108f2;
+    outline-offset: 1px;
+}
+
+.button_1 {
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
+.button_2 {
+    border-radius: 10px;
+    padding: 10px 22px;
+}
+
