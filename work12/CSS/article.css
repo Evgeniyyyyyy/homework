@@ -1,0 +1,140 @@
+
+.article {
+    padding-top: 80px;
+}
+
+.article-text {
+    margin-bottom: 20px;
+    font-family: Ubuntu;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #535755;
+}
+
+.article-decor-wrapper {
+    position: relative;
+}
+
+.article-decor-wrapper-1::before {
+    top: 100px;
+    left: 0;
+}
+
+.article-decor-wrapper-2::before {
+    right: 0;
+    bottom: 136px;
+}
+
+.article-images {
+    max-width: 100%;
+    height: auto;
+}
+
+.article-images-mb {
+    margin-bottom: 80px;
+}
+
+
+.article-play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width:60px;
+    height: 60px;
+    padding: 0;
+    background-color: #3596ED;
+    border: none;
+    border-radius: 50%;
+    z-index: 1;
+    cursor: pointer;
+    -webkit-transition: background-color 0.2s;
+    -o-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+}
+
+.article-play-button:hover{
+    background-color: #6ab9ff;
+}
+
+.article-play-button:not(:disabled):active {
+    background-color: #3596ED;
+}
+
+.article-list {
+    margin-bottom: 0;
+    padding-left: 16px;
+}
+
+.article-item {
+    margin-bottom: 12px;
+}
+
+.article-item::marker {
+    font-size: 22px;
+    color: #3596ED;
+}
+
+.article-list-mb {
+    margin-bottom: 80px;
+}
+
+.article-text-mb {
+    margin-bottom: 120px;
+}
+
+@media(width <= 768px) {
+    .article-decor-wrapper::before {
+        display: none;
+    }
+
+    .article-images-mb {
+        margin-bottom: 60px;
+    }
+
+    .article-title-medium{
+        font-size: 32px;
+    }
+
+}
+
+@media (width <= 576px) {
+    .article {
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+
+    .article-images-mb {
+        margin-bottom: 40px;
+    }
+
+    .article-list-mb {
+        margin-bottom: 30px;
+    }
+
+    .article-play-button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .article-play-button img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .article-text-mb {
+        margin-bottom: 0;
+    }  
+}
