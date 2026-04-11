@@ -193,12 +193,6 @@ summary::after {
 }
 
 
-@media (width <= 1440px) {
-    .hero-images img{
-        width: 50%;
-    }
-}
-
 @media (width <= 992px) {
     .hero::after {
         display: none;
@@ -226,6 +220,10 @@ summary::after {
     .hero-info .text {
         margin-bottom: 30px;
         max-width: inherit;
+    }
+
+    .hero-images img{
+        width: 50%;
     }
 
     .news-container{
